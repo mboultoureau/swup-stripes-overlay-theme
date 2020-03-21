@@ -1,8 +1,8 @@
 # Swup Stripes Overlay Theme
 
-<div style="text-align:center">
+<p align="center">
   <img alt="Theme overview" src="demo.gif" />
-</div>
+</p>
 
 This is a theme for [swup](https://swup.js.org/) - complete, flexible, extensible and easy to use page transition library for your web.
 
