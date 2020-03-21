@@ -1,0 +1,56 @@
+.swup-transition-stripes-overlay {
+	opacity: 0.99;
+	z-index: 9999;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	pointer-events: none;
+
+	div {
+		position: absolute;
+	}
+
+	div:nth-child(1) {
+		bottom: -80vh;
+		left: -80vh;
+		border-right: 80vw solid transparent;
+		z-index: 2;
+	}
+
+	div:nth-child(2) {
+		bottom: -100vh;
+		left: -100vh;
+		border-right: 100vw solid transparent;
+	}
+
+	div:nth-child(3) {
+		top: -100vh;
+		right: -100vh;
+		border-left: 100vw solid transparent;
+	}
+
+	div:nth-child(4) {
+		top: -80vh;
+		right: -80vh;
+		border-left: 80vw solid transparent;
+		z-index: 2;
+	}
+
+	html.is-animating & {
+		opacity: 1;
+	}
+
+	html.is-animating & div:nth-child(1),
+	html.is-animating & div:nth-child(2) {
+		bottom: 0;
+		left: 0;
+	}
+
+	html.is-animating & div:nth-child(3),
+	html.is-animating & div:nth-child(4) {
+		top: 0;
+		right: 0;
+	}
+}
